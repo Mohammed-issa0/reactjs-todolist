@@ -3,7 +3,10 @@ import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 
 function App() {
+  // for saving the main list
   const [todos, setTodos] = useState([]);
+
+  //for saving the value that coming from the input
   const [todoValue, setTodoValue] = useState("");
 
   function persistData(newList) {
